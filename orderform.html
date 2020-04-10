@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d4289be8d.js" crossorigin="anonymous"></script>
+    <title>Order</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="image/huawei_logo.png" alt=""></li>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><strong>Huawei Mobile Introduction</strong></li>
+        </ul>
+    </nav>
+    <div class="head"></div>
+    <section class="order">
+        <form action="result.html" method="GET">
+            <div><h1>Order Form</h1></div>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Type full name as your IC" required>
+        </div>
+        <div>
+            <label for="IC">IC number:</label>
+            <input type="tel" name="IC" id="IC" placeholder="exp:011111011111" required>
+        </div>
+        <div>
+            gender:
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </div>
+        <div>
+            <label for="contactNO">Contact number:</label>
+            <input type="tel" name="contact number" id="contactNO" required placeholder="exp:0123456789">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="exp:abc1234@gmail.com">
+        </div>
+        <div>
+            <label for="model">Model:</label>
+            <select name="model" id="model">
+                <option value="HUAWEI P30">HUAWEI P30</option>
+                <option value="HUAWEI P40">HUAWEI P40</option>
+                <option value="HUAWEI P40 Pro">HUAWEI P40 Pro</option>
+                <option value="HUAWEI Mate 20 Pro">HUAWEI Mate 20 Pro</option>
+                <option value="HUAWEI Mate 30 Pro">HUAWEI Mate 30 Pro</option>
+                <option value="HUAWEI Mate 30">HUAWEI Mate 30</option>
+                <option value="HUAWEI nova 5T">HUAWEI nova 5T</option>
+                <option value="HUAWEI nova 3">HUAWEI nova 3</option>
+            </select>
+        </div>
+        <div>
+            <label for="color">colour:</label>
+            <select name="color" id="color">
+                <option value="blue">blue</option>
+                <option value="black">black</option>
+                <option value="white">white</option>
+            </select>
+        </div>
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1" max="20" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<footer>
+    <div>
+        <h3>For further support,please call: </h3><br>
+        +60187638290 <br>
+        <h3>or email to: </h3><br>
+        plchai0822@gmail.com
+    </div>
+    <div>
+        <h3>Sponsored by: </h3><br>
+        <img src="image/southernlogo.png" alt="">
+        <img src="image/phlogo.png" alt="">
+        <img src="image/photo.jpg" alt="" class="lb">
+    </div>
+</footer>
+</body>
+</html>

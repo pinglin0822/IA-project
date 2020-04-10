@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d4289be8d.js" crossorigin="anonymous"></script>
+    <title>result</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="image/huawei_logo.png" alt=""></li>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><strong>Huawei Mobile Introduction</strong></li>
+        </ul>
+    </nav>
+    <div class="head"></div>
+    <section class="orderresult">
+        <div style="text-decoration: underline;margin-bottom: 1rem;">Order Detail</div>
+        <div id="results"></div>
+        <div style="margin: 1rem;">Your request has been approve,please wait for the email</div>
+        <div class="back"><a href="orderform.html">Back to Form</a></div>
+    </section>
+    <footer>
+        <div>
+            <h3>For further support,please call: </h3><br>
+            +60187638290 <br>
+            <h3>or email to: </h3><br>
+            plchai0822@gmail.com
+        </div>
+        <div>
+            <h3>Sponsored by: </h3><br>
+            <img src="image/southernlogo.png" alt="">
+            <img src="image/phlogo.png" alt="">
+            <img src="image/photo.jpg" alt="" class="lb">
+        </div>
+    </footer>
+    <script>
+        const resultsList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value,name) => {
+            resultsList.append(`${name}: ${value}`)
+            resultsList.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>
